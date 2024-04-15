@@ -18,6 +18,6 @@ print(name[4])
 # print(name[5]) # Throws an error 5-index is not here
 print("Lets use a for loop\n")
 
-# Looping through the string
-for character in apple: #For loop
-    print(character)
+# # Looping through the string
+# for character in apple: #For loop
+#     print(character)

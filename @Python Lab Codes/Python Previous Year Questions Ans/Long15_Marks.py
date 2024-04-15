@@ -5,8 +5,6 @@ def print_pattern(n):
 
 print_pattern(5)
 
-
-
 # '''
 # def print_pattern(n):
 #     for i in range(1, n + 1):

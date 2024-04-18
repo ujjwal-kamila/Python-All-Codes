@@ -10,6 +10,7 @@ print(massage + response)
 print(5 * response)
 print(massage[0])
 
+
 def welcome():
     print("you are welcome")
 #print(__name__) 

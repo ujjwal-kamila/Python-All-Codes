@@ -3,6 +3,7 @@ def is_palindrome(s):
         return True
     return s[0] == s[-1] and is_palindrome(s[1:-1])
 
+
 # Test the function
 input_string = input("Enter a string: ")
 

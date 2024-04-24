@@ -26,7 +26,6 @@
 
 
 from functools import reduce
-
 # List of numbers
 numbers = [1, 2, 3, 4, 5] 
 

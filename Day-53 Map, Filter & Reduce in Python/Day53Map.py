@@ -20,10 +20,8 @@
 # def filter_function(a):
 #   return a>2
   
-# newnewl = list(filter(filter_function, l))
-# print(newnewl)
-
-
+# newnel = list(filter(filter_function, l))
+# print(newnel)
 
 from functools import reduce
 # List of numbers

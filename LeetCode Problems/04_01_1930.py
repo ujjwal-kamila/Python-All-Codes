@@ -25,3 +25,5 @@ class Solution:
 s = "adc"
 solution = Solution()
 print(solution.countPalindromicSubsequence(s))
+
+

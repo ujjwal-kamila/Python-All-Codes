@@ -13,7 +13,7 @@ class Solution:
 
             #Ensure that there is a substring between the first and last occurrence
             if rightIndex > leftIndex + 1:
-                # Step 5: Get unique characters in the substring that lies between left and right occurrences
+                #Get unique characters in the substring that lies between left and right occurrences
                 newSet = set(s[leftIndex + 1: rightIndex])
 
                 #Add the length of unique characters in the middle part
@@ -24,4 +24,4 @@ class Solution:
 # Example usage
 s = "adc"
 solution = Solution()
-print(solution.countPalindromicSubsequence(s))  # Expected Output: 1
+print(solution.countPalindromicSubsequence(s))

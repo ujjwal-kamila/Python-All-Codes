@@ -23,6 +23,6 @@ def maxscore(s) -> int:
     
     return max_score
 
-# test case
+# Test case
 s = "011101"
 print(maxscore(s))  # 5

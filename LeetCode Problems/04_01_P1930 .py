@@ -21,7 +21,7 @@ class Solution:
 
         return res
 
-# Example usage
+# Test case
 s = "adc"
 solution = Solution()
 print(solution.countPalindromicSubsequence(s))

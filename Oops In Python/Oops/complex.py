@@ -53,6 +53,13 @@ class ComplexNumber:
 
         ans =self * ComplexNumber(other.real/denom , (-1*other.imag)/denom)
         return ans
+    
+    def __eq__(self, other):
+        return self.real == other.real and self.imag == other.imag
+    
+    def __ne__(self,other):
+        return self.real != other.real and self.imag != other.imag
+        
 
 
 
@@ -71,5 +78,7 @@ print("Substraction Result:",cn1-cn2)
 print("Multiplication Result:",cn1*cn2)     # (3+5i) * (4+8i) = (3×4 - 5×8) + (3×8 + 5×4)i
 
 print("Division Result:",cn1/cn2)
+print("Equality check  : ",cn1==cn2)
+print("Not Equality check : ",cn1!=cn2)
 
 

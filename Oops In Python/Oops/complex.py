@@ -8,9 +8,9 @@ class ComplexNumber:
     # Magic method for display
     def __str__(self):
         if self.real == 0:
-            return f"{self.imag}i"
+            return f"0+{self.imag}i" if self.imag != 0 else "0"  # Fix for zero real part
         elif self.imag < 0:
-            return f"{self.real} {self.imag}i"
+            return f"{self.real}{self.imag}i"
         else:
             return f"{self.real}+{self.imag}i"
 
@@ -51,7 +51,7 @@ class ComplexNumber:
         resImag = 0
         denom = other.real**2 + other.imag**2
 
-        ans =self * ComplexNumber(other.real/denom , (-1*other.imag)/denom)
+        ans = self * ComplexNumber(other.real/denom , (-1*other.imag)/denom)
         return ans
     
     def __eq__(self, other):
@@ -60,7 +60,7 @@ class ComplexNumber:
     def __ne__(self,other):
         return self.real != other.real and self.imag != other.imag
         
-
+    
 
 
 # Test cases
@@ -80,5 +80,22 @@ print("Multiplication Result:",cn1*cn2)     # (3+5i) * (4+8i) = (3×4 - 5×8) + 
 print("Division Result:",cn1/cn2)
 print("Equality check  : ",cn1==cn2)
 print("Not Equality check : ",cn1!=cn2)
+
+
+
+
+# Test Case 1:
+
+complex1 = ComplexNumber(3, 4)
+complex2 = ComplexNumber(1, -2)
+assert str(complex1) == "3+4i"
+assert str(complex2) == "1-2i"
+assert str(complex1 + complex2) == "4+2i"
+assert str(complex1 - complex2) == "2+6i"
+assert str(complex1 * complex2) == "11-2i"
+assert str(complex1 / complex2) == "-1.0+2.0i"
+assert complex1 != complex2
+print("All test cases are passed✅✅ ")
+
 
 

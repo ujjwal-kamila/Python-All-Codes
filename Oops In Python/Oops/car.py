@@ -1,6 +1,6 @@
 # Create a class car with attribute like brand and model.Then create instance of this class
 
-"""        Attributes:
+""" Attributes:
         - brand: The manufacturer of the car.
         - model: The specific model of the car.
         - color: The color of the car.
@@ -26,7 +26,7 @@ class Car:
         print(f"Car Details: \n{self.brand} {self.model}, Color: {self.color}, Price: ${self.price} Top Speed: {self.top_speed} km/h\n")
 
 # Create an object of the Car class
-my_car = Car("Toyota", "Corolla", "Red", 20000,'300km/h')
+my_car = Car("Toyota", "Corolla", "Red", 20000,300)
 
 # Call the methods
 my_car.print_info()  

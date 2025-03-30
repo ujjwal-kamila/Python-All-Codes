@@ -51,8 +51,13 @@ class ComplexNumber:
         resImag = 0
         denom = other.real**2 + other.imag**2
 
-        ans = self * ComplexNumber(other.real/denom , (-1*other.imag)/denom)
-        return ans
+        # ans = self * ComplexNumber(other.real/denom , (-1*other.imag)/denom)
+        resReal = (self.real * other.real + self.imag * other.imag) / denom
+        resImag = (self.imag * other.real - self.real * other.imag) / denom
+        
+        return ComplexNumber(resReal,resImag)
+    
+    
     
     def __eq__(self, other):
         return self.real == other.real and self.imag == other.imag

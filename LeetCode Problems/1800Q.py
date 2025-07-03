@@ -15,6 +15,6 @@ class Solution:
         return max(max_sum, current_sum)
 
 # Test Cases
-print(Solution().maxAscendingSum([10,20,30,5,10,50]))  # ✅ 65
-print(Solution().maxAscendingSum([10,20,30,40,50]))    # ✅ 150
-print(Solution().maxAscendingSum([12,17,15,13,10,11,12]))  # ✅ 33
+print(Solution().maxAscendingSum([10,20,30,5,10,50]))  
+print(Solution().maxAscendingSum([10,20,30,40,50]))   
+print(Solution().maxAscendingSum([12,17,15,13,10,11,12]))

@@ -217,4 +217,3 @@ print(obj.message())
 # obj = D()
 # print(obj.value)
 # # What will be the output of the code above?
-

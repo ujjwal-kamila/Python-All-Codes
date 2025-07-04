@@ -23,3 +23,4 @@ class Solution:
 # test case
 sol = Solution()
 sol.kthCharacter(5)
+

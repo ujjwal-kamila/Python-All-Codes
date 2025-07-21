@@ -5,7 +5,7 @@ count = 0
 def print_name(name):
     global count
     if count == 4:
-        return "finished"
+        return 
     print(name)
     count += 1
     print_name(name)
@@ -21,7 +21,7 @@ count = 0
 def print_name(name):
     global count
     if count == 4:
-        return "finished"
+        return 
     count += 1
     print_name(name)
     print(name)

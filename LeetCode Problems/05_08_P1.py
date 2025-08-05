@@ -14,5 +14,4 @@ class Solution:
                     return [i, j]
 
 ans = Solution().twoSum([2, 7, 11, 15], 9)
-ans = Solution().twoSum([3,2,4], )
 print(ans)

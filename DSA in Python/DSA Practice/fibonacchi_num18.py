@@ -21,5 +21,5 @@ class Solution:
     def fib(self, n: int) -> int:
         return self.fun(n)
 
- 
+
 print(Solution().fib(5))  

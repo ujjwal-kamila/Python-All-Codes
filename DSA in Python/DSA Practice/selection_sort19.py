@@ -10,7 +10,7 @@ class Solution:
                 if (arr[j] < arr[min_index]):
                     min_index = j
             arr[i],arr[min_index] = arr[min_index],arr[i]
-        return arr
+        return arr # also can return arr[::-1] for decending
 
 
 ans = Solution().selecton_sort([4,6,2,8,0,1])

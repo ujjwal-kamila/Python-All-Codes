@@ -6,5 +6,9 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        n =len(nums)
-        for i in r
+
+        rotations = k % len(nums)
+
+        for _ in range(rotations):
+            last = nums.pop()
+            nums.insert(0, last)
